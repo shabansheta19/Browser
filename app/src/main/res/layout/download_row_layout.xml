@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#eaeded">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="File Name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/downloadFileName1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/downloadPauseResumeBtn1"
+                android:src="@drawable/ic_action_pause"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:layout_weight="7"
+            android:id="@+id/downloadProgressBar1"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/downloadPercentage1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
